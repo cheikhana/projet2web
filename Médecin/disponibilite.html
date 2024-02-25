@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Gestion des disponibilités</title>
+    <link rel="stylesheet" type="text/css" href="styl.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <section class="en-tete">
+            <nav>
+                <div class="nav-links " id="navLinks">
+                    <i class="fa fa-times" onclick="hideMenu()"></i>
+                    <ul>
+                        <li><a href="index.html">Accueil</a></li>
+                    
+                     <!---- <li><a href="">Connexion</a></li> -->
+                        <li><a href="reservation.html">Gestion des Reservations</a></li>
+                        <li><a href="disponibilite.html">Gestion des Disponibilités</a></li>
+                        <li><a href="notifications.html">Notifications</a></li>
+                        <li><a href="statistique.html">Statistiques et Rapports</a></li>
+                    </ul>
+                </div>
+                <i class="fa fa-bars" onclick="showMenu()"></i>
+            </nav>  
+    </section>
+    <form action="disponible.php" method="get">
+        <table>
+         <tr>
+            <th>Jours</th>
+            <th>Heure-Demarrage</th>
+            <th>Heure-fermuture</th>
+         </tr>
+         <tr>
+            <td>Lundi</td>
+            <td><input type="time" name="heure1"></td>
+            <td><input type="time" name="heure2"></td>
+         </tr>
+
+         <tr>
+         <td>Mardi</td>
+            <td><input type="time" name="heure3"></td>
+            <td><input type="time" name="heure4"></td>
+         </tr>
+
+         <tr>
+         <td>Mercredi</td>
+            <td><input type="time" name="heure4"></td>
+            <td><input type="time" name="heure6"></td>
+         </tr>
+         <tr>
+         <td>Jeudi</td>
+            <td><input type="time" name="heure7"></td>
+            <td><input type="time" name="heure8"></td>
+         </tr>
+         <tr>
+         <td>Vendredi</td>
+            <td><input type="time" name="heure9"></td>
+            <td><input type="time" name="heure10"></td>
+         </tr>
+         <tr>
+         <td>Samedi</td>
+            <td><input type="time" name="heure11"></td>
+            <td><input type="time" name="heure12"></td>
+         </tr>
+    </table>
+    <input type="submit" value="appliquer">
+    <input type="reset" value="annuler">
+    </form>
+
+</body>
+</html>
